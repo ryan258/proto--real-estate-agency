@@ -1,0 +1,36 @@
+// this is an include, a placeholder, then selectors are added to the placeholder with the style definitions
+
+// a mixin works the other way around where the content is pasted into each thing using it instead of it being grouped on to a placesholder of styles
+
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.heading {
+  &-1 {
+    @extend %heading;
+    &--dark {
+    }
+  }
+  &-2 {
+    @extend %heading;
+    &--dark {
+    }
+  }
+  &-3 {
+    @extend %heading;
+    &--dark {
+    }
+  }
+  &-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+    &--light {
+      color: $color-grey-light-1;
+    }
+    &--dark {
+      color: $color-grey-dark-1;
+    }
+  }
+}
