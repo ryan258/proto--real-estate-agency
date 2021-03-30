@@ -11,6 +11,7 @@
   &-1 {
     @extend %heading;
     &--dark {
+      color: $color-grey-dark-1;
     }
   }
   &-2 {
@@ -33,6 +34,7 @@
     text-transform: uppercase;
 
     &--dark {
+      color: $color-grey-dark-1;
     }
   }
   &-4 {
